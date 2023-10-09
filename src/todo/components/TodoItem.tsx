@@ -1,16 +1,14 @@
-import { useContext } from "react";
 import { Todo } from "../interfaces/interfaces";
-import { TodoContext } from "../context/TodoContexts";
+import { useTodos } from "../hooks/useTodos";
 
 interface props {
   todo: Todo;
 }
 
 export const TodoItem = ({ todo }: props) => {
-  const { toggleTodo } = useContext(TodoContext);
+  const { toggleTodo } = useTodos();
 
   const handleDbClick = () => {
-    // console.log("handleDbClick: ", todo.desc);
     toggleTodo(todo.id);
   };
 
