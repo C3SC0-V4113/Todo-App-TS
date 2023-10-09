@@ -5,7 +5,7 @@ import { todoReducer } from "./todoReducer";
 
 const INITIAL_STATE: TodoState = {
   todoCount: 2,
-  todo: [
+  todos: [
     {
       id: "1",
       desc: "Recolectar las piedras del infinito",

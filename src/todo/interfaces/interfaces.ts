@@ -6,7 +6,7 @@ export interface Todo {
 
 export interface TodoState {
   todoCount: number;
-  todo: Todo[];
+  todos: Todo[];
   completed: number;
   pending: number;
 }

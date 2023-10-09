@@ -12,7 +12,7 @@ export const todoReducer = (
     case "addTodo":
       return {
         ...state,
-        todo: [...state.todo, action.payload],
+        todos: [...state.todos, action.payload],
       };
 
     default:
